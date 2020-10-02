@@ -1,0 +1,163 @@
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #242325;
+    background-color: #FEFDFF;
+    letter-spacing: 0.01em;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1.2em;
+    margin-top: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: .8em;
+    margin-top: 1.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    margin-top: 1.2em;
+}
+
+p {
+    line-height: 1.4em;
+    max-width: 70%;
+}
+
+a {
+    color: #242325;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #242325;
+}
+
+u {
+ text-decoration-color: #F6F740;
+}
+
+mark {
+    background-color: #F6F740;
+}
+s {
+    text-decoration-color: #242325;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+ul li {
+    margin-top: .9em;
+    margin-bottom: .9em;
+}
+ul > li > ul li {
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+
+ul > li > ul {
+    padding-inline-start: 50px;
+}
+
+ol {
+    padding-inline-start: 20px;
+}
+
+ol li {
+    margin-top: .9em;
+    margin-bottom: .9em;
+}
+
+ol > li > ol li {
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+
+ol > li > ol {
+    padding-inline-start: 50px;
+}
+
+b, strong {
+ font-size: 1.1em;
+}
+
+
+
+em {
+ font-weight: 600;
+}
+
+article {
+    border-left: .3em #F6F740 solid;
+    margin: 2.8em 0;
+    
+    
+}
+article p {
+    padding-left: 1em;
+}
+article p:nth-child(odd){
+    background-color: #cacaca;
+}
+
+figure {
+    max-width: 70%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+figcaption {
+    font-size: 1em;
+}
+
+
+@media only screen and (max-width: 480px) {
+    body {
+        max-width: 99vw;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        max-width: 95vw;
+    }
+    p {
+        max-width: 100%;
+    }
+    figure {
+        max-width: 100%;
+    }
+    figcaption {
+        font-size: .9em;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        max-width: 90vw;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    body {
+        max-width: 70vw;
+    }
+}
+
+@media print {
+    body {
+        width: 100%;
+    }
+    figure, ol, ul {
+        break-inside: avoid;
+    }
+}
